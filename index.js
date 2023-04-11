@@ -21,9 +21,9 @@ function Converter() {
         style: 'currency',
         currency: 'USD',
     });
-    document.getElementById("resullibra").innerHTML = resultadoLibra.toLocaleString('de-DE', {
+    document.getElementById("resullibra").innerHTML = resultadoLibra.toLocaleString('en-GB', {
         style: 'currency',
-        currency: 'EUR',
+        currency: 'GBP',
     });
 
 }

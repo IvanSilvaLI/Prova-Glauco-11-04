@@ -6,6 +6,10 @@
     outline: none;
 }
 
+body{
+    background-image: linear-gradient(to top right, #00ccff, #170202);
+}
+
 
 .container {
     background-color: #fff;
@@ -21,11 +25,13 @@
 }
 
 .buttons {
-    
+    align-items: center;
+    vertical-align: middle;
 }
 
+
 #converter {
-    width: 350px;
+    width: 253px;
     color: white;
 }
 
