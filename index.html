@@ -5,22 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <title>Prova Conversão de Moedas</title>
 </head>
 <body>
-
+        <div class="container">
 
         <label for=""> Insira a cotação do Dólar:</label>
-        <input type="number" id="Dolar">
+        <input class="form-control" type="number" id="Dolar">
         <label for=""> Insira a cotação da Libra:</label>
-        <input type="number" id="Libra">
+        <input class="form-control" type="number" id="Libra">
         <label for=""> Insira a Cotação do Euro:</label>
-        <input type="number" id="Euro">
+        <input class="form-control" type="number" id="Euro">
         <label for=""> Insira o valor em reais a ser convertido:</label>
-        <input type="number" id="Real">
-
+        <input class="form-control" type="number" id="Real">
+        <div class="button"> 
         <button id="converter" onclick="Converter()">Converter</button>
-
+    </div>           
 
 
     <div id="Resultado">
@@ -30,7 +31,9 @@
         <p> O valor de Real em Libra é: <span id="resullibra"></span></p>
 
     </div>
-    
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
 <script src="index.js"></script>
 </body>
 </html>

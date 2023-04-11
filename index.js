@@ -8,13 +8,13 @@ function Converter() {
     let valReal = parseFloat(document.getElementById("Real").value);
 
     //Calcular e passar para as variáveis resultado
-    resultadoEuro = valReal * valEuro;
-    resultadoDolar = valReal * valDolar;
-    resultadoLibra = valReal * valLibra;
+    resultadoEuro = valReal / valEuro;
+    resultadoDolar = valReal / valDolar;
+    resultadoLibra = valReal / valLibra;
 
     //Exibir o resultado na Página html
-    document.getElementById("resuleuro").innerHTML = resultadoEuro;
-    document.getElementById("resuldolar").innerHTML = resultadoDolar;
-    document.getElementById("resullibra").innerHTML = resultadoLibra;
+    document.getElementById("resuleuro").innerHTML = resultadoEuro.toFixed(2);
+    document.getElementById("resuldolar").innerHTML = resultadoDolar.toFixed(2);
+    document.getElementById("resullibra").innerHTML = resultadoLibra.toFixed(2);
 
 }
