@@ -10,7 +10,7 @@
 .container {
     background-color: #fff;
     width: 600px;
-    padding: 50px 30px;
+    padding: 30px 25px;
     position: absolute;
     transform:  translate(-50%, -50%);
     top: 50%;
@@ -18,5 +18,14 @@
     border-radius: 10px;
     box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
 
+}
+
+.buttons {
+    
+}
+
+#converter {
+    width: 350px;
+    color: white;
 }
 

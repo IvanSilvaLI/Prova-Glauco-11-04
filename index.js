@@ -13,8 +13,22 @@ function Converter() {
     resultadoLibra = valReal / valLibra;
 
     //Exibir o resultado na Página html
-    document.getElementById("resuleuro").innerHTML = resultadoEuro.toFixed(2);
-    document.getElementById("resuldolar").innerHTML = resultadoDolar.toFixed(2);
-    document.getElementById("resullibra").innerHTML = resultadoLibra.toFixed(2);
+    document.getElementById("resuleuro").innerHTML = resultadoEuro.toLocaleString('de-DE', {
+        style: 'currency',
+        currency: 'EUR',
+    });
+    document.getElementById("resuldolar").innerHTML = resultadoDolar.toLocaleString('en-US', {
+        style: 'currency',
+        currency: 'USD',
+    });
+    document.getElementById("resullibra").innerHTML = resultadoLibra.toLocaleString('de-DE', {
+        style: 'currency',
+        currency: 'EUR',
+    });
 
+}
+
+function newFunction() {
+    resultadoEuro = parseFloat(resultadoEuro.replace(',', '.'));
+    console.log(resultadoEuro)
 }
