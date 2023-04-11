@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova Conversão de Moedas</title>
+</head>
+<body>
+    <form action="">
+
+        <label for=""> Insira a cotação do Dólar:</label>
+        <input type="text" id="Dolar">
+        <label for=""> Insira a cotação da Libra:</label>
+        <input type="text" id="Libra">
+        <label for=""> Insira a Cotação do Euro:</label>
+        <input type="text" id="Euro">
+        <label for=""> Insira o valor em reais a ser convertido:</label>
+        <input type="text" id="Real">
+
+        <button id="converter" onclick="Converter()"> Converter </button>
+
+    </form>
+
+    <div id="Resultado">
+
+        <p> O valor de Real em Euro é: <span id="resuleuro"></span></p>
+        <p> O valor de Real em Dólar é: <span id="resuldolar"></span></p>
+        <p> O valor de Real em Libra é: <span id="resullibra"></span></p>
+
+    </div>
+    
+<script src="index.js"></script>
+</body>
+</html>
